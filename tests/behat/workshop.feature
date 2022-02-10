@@ -35,10 +35,10 @@ Feature: Plagiarism plugin works with a Moodle Workshop
     # Create Workshop.
     And I am on "Course 1" course homepage with editing mode on
     And I add a "Workshop" to section "1" and I fill the form with:
-      | Workshop name                     | Test workshop |
-      | use_turnitin                      | 1             |
-      | plagiarism_compare_student_papers | 1             |
-      | plagiarism_show_student_report    | 1             |
+      | Workshop name                          | Test workshop |
+      | Enable Turnitin                        | 1             |
+      | Check against stored student papers    | 1             |
+      | Display Similarity Reports to Students | 1             |
     And I am on "Course 1" course homepage
     And I edit assessment form in workshop "Test workshop" as:"
       | id_description__idx_0_editor | Aspect1 |

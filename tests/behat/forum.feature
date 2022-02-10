@@ -35,13 +35,13 @@ Feature: Plagiarism plugin works with a Moodle forum
     # Create Forum.
     And I am on "Course 1" course homepage with editing mode on
     And I add a "Forum" to section "1" and I fill the form with:
-      | Forum name                        | Test forum name                |
-      | Forum type                        | Standard forum for general use |
-      | Description                       | Test forum description         |
-      | groupmode                         | 0                              |
-      | use_turnitin                      | 1                              |
-      | plagiarism_compare_student_papers | 1                              |
-      | plagiarism_show_student_report    | 1                              |
+      | Forum name                              | Test forum name                |
+      | Forum type                              | Standard forum for general use |
+      | Description                             | Test forum description         |
+      | groupmode                               | 0                              |
+      | Enable Turnitin                         | 1                              |
+      | Check against stored student papers     | 1                              |
+      | Display Similarity Reports to Students  | 1                              |
     And I add a new discussion to "Test forum name" forum with:
       | Subject | Forum post 1 |
       | Message | This is the body of the forum post that will be submitted to Turnitin. It will be sent to Turnitin for Originality Checking |

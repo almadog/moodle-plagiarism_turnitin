@@ -38,12 +38,12 @@ Feature: Plagiarism plugin works with a Moodle Assignment for group submissions
     # Create Assignment.
     And I am on "Course 1" course homepage with editing mode on
     And I add a "Assignment" to section "1" and I fill the form with:
-      | Assignment name                   | Test assignment name |
-      | use_turnitin                      | 1                    |
-      | plagiarism_show_student_report    | 1                    |
-      | plagiarism_compare_student_papers | 1                    |
-      | Students submit in groups         | Yes                  |
-      | Group mode                        | Separate groups      |
+      | Assignment name                         | Test assignment name |
+      | Enable Turnitin                         | 1                    |
+      | Display Similarity Reports to Students  | 1                    |
+      | Check against stored student papers     | 1                    |
+      | Students submit in groups               | Yes                  |
+      | Group mode                              | Separate groups      |
     And I navigate to "Users > Groups" in current page administration
     And I add "student1 student1" user to "Group 1" group members
     And I add "student2 student2" user to "Group 1" group members

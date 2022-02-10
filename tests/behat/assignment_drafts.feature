@@ -37,11 +37,11 @@ Feature: Plagiarism plugin works with a Moodle Assignment utilising the draft su
     # Create Assignment.
     And I am on "Course 1" course homepage with editing mode on
     And I add a "Assignment" to section "1" and I fill the form with:
-      | Assignment name                   | Test assignment name |
-      | use_turnitin                      | 1                    |
-      | plagiarism_compare_student_papers | 1                    |
-      | submissiondrafts                  | 1                    |
-      | plagiarism_draft_submit           | 1                    |
+      | Assignment name                     | Test assignment name |
+      | Enable Turnitin                     | 1                    |
+      | Check against stored student papers | 1                    |
+      | submissiondrafts                    | 1                    |
+      | plagiarism_draft_submit             | 1                    |
     And I follow "Test assignment name"
     Then I should see "Grading summary"
 

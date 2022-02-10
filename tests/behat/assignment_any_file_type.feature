@@ -36,8 +36,8 @@ Feature: Plagiarism plugin works with a Moodle Assignment for a filetype which w
     And I am on "Course 1" course homepage with editing mode on
     And I add a "Assignment" to section "1" and I fill the form with:
       | Assignment name                     | Test assignment name |
-      | use_turnitin                        | 1                    |
-      | plagiarism_compare_student_papers   | 1                    |
+      | Enable Turnitin                     | 1                    |
+      | Check against stored student papers | 1                    |
       | plagiarism_allow_non_or_submissions | 1                    |
     Then I should see "Test assignment name"
 
